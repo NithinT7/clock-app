@@ -11,9 +11,38 @@
     <div class="title">
         <h1>Nithin's Clock App</h1>
     </div>
+    <div class="current-time">Loading...</div>
+    <div class="counters">
+        <div class="timer">
+            <h3>Timer</h3>
+            <form>
+                <input type="text" id="timer" value="00:00:00">
+                <div class="buttons">
+                    <button type="button" id="start">Start</button>
+                    <button type="button" id="stop">Stop</button>
+                    <button type="button" id="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="stopwatch">
+            <h3>Stopwatch</h3>
+            <form>
+                <input type="text" id="stopwatch" value="0ms">
+                <div class="buttons">
+                    <button type="button" id="start">Start</button>
+                    <button type="button" id="stop">Stop</button>
+                    <button type="button" id="lap">Lap</button>
+                    <button type = "button" id="reset">Reset</button>
+                </div>
+                <div class="laps">
+                    <h4>Laps:</h4>
+                    <ul id="laps"></ul>
+            </form>
+        </div>
+    </div>
     <div class="footer">
         <p>Created by Nithin Thumma</p>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
