@@ -6,10 +6,13 @@ const stopWatch = document.querySelector('.stopwatch #stopwatch');
 
 const lap = document.querySelector('.laps #laps');
 const time = document.querySelector('.current-time');
+//Clock
 setInterval(() => {
     let date = new Date();
     time.innerHTML = date.toLocaleTimeString().slice(0, 5) + ' ' + date.toLocaleTimeString().slice(9, 11);
 }, 1000);
+
+//StopWatch
 let started = false;
 let intervalId = null;
 let count = 0;
@@ -40,3 +43,8 @@ lapBtn.addEventListener('click', () => {
     lapLi.innerHTML = stopWatch.value;
     lap.appendChild(lapLi);
 });
+
+//Timer
+const timerStart = document.querySelector('.timer #start');
+const timerPause = document.querySelector('.timer #pause');
+const timerReset = document.querySelector('.timer #reset');

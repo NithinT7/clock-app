@@ -113,7 +113,7 @@ form button{
 #start:hover{
     background: #0b980b;
 }
-#stop:hover{
+#stop:hover, #pause:hover{
     background: #9c0303;
 }
 #reset:hover{
@@ -157,6 +157,11 @@ form button{
     font-weight: 400;
     text-align: center;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.763);
+}
+
+.btn-group{
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 @media screen and (max-width: 450px){
     .title h1{

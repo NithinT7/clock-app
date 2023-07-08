@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nithin's Clock App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
     <div class="title">
@@ -19,8 +20,22 @@
                 <input type="text" id="timer" value="00:00:00">
                 <div class="buttons">
                     <button type="button" id="start">Start</button>
-                    <button type="button" id="stop">Stop</button>
+                    <button type="button" id="pause">Pause</button>
                     <button type="button" id="reset">Reset</button>
+                    <!-- Large button group -->
+                    <div class="btn-group">
+                        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Intervals <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" >+10 min</a></li>
+                            <li><a href="#">+5 min</a></li>
+                            <li><a href="#">+1 min</a></li>
+                            <li><a href="#" >-1 min</a></li>
+                            <li><a href="#">-5 min</a></li>
+                            <li><a href="#">-10 min</a></li>
+                        </ul>
+                    </div>
                 </div>
             </form>
         </div>
@@ -44,5 +59,8 @@
         <p>Created by Nithin Thumma</p>
     </div>
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
